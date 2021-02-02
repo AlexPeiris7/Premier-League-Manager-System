@@ -9,7 +9,7 @@ and open the folder called "spring-boot" in an IDE.
 -------------------------------------------------------------------------
 ANGULARJS
 -------------------------------------------------------------------------
-Open the "Angular-CW-OOP" in an IDE 
+Open the "Angular-CW-OOP" in an IDE (node modules folder has been removed)
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
 HOW THE SYSTEM WORKS
