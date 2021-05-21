@@ -1,5 +1,5 @@
 # Premier-League-Manager-System
-A simple premier league manager 2020/2021 system developed with the AngularJs framework along with Typescript as the Front-End and Java Spring Boot framework as the Back-end
+A simple premier league manager 2020/2021 system developed with the AngularJs framework along with Typescript as the Front-End and Java Spring Boot framework as the Back-end with the use of OOP principles
 -------------------------------------------------------------------------
 SPRINGBOOT
 -------------------------------------------------------------------------
