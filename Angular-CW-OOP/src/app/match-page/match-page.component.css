@@ -1,0 +1,109 @@
+#upper-part {
+  color: black;
+  text-align: center;
+  padding: 7%;
+}
+h2 {
+  display: inline-block;
+  font-family: 'Tahoma', monospace;
+  font-size: 75px;
+  height: 80px;
+  margin:0;
+  color: white;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+}
+th {
+
+}
+table, th, td {
+  text-align: center;
+  color: white;
+  font-family: 'Tahoma', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  height:25%;
+  background: rgba(0,0,0,.5);
+  line-height: 50px;
+}
+th {
+  border-bottom: 3px solid white;
+}
+table{
+  border: 3px solid white;
+  border-radius: 10px;
+  border-style: outset;
+}
+table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: rgba(0,0,0,1);
+}
+#matchTable{
+  overflow:hidden;
+  overflow-y: scroll;
+  height: 500px;
+}
+td {
+  height: 20px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: purple gray ;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkviolet;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+#formInput {
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 30px;
+  width: 15%;
+}
+#formLabel {
+  font-family: 'Tahoma', monospace;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+#searchDate, #backDate {
+  border: 3px solid black;
+  background: #f3f0f1;
+  border-radius: 5px;
+  font-family: 'Tahoma', monospace;
+  font-size: 18px;
+  width: 7%;
+  height: 38px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#searchDate:hover , #backDate:hover {
+  background: black;
+  color: orangered;
+}
+body {
+  scroll-behavior: smooth;
+}

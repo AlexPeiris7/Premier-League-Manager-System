@@ -1,0 +1,36 @@
+<head>
+  <title>Match Registry Table</title>
+</head>
+<body>
+<header>
+  <div id="upper-part">
+    <h2 id="k">Match Registry</h2>
+  </div>
+</header>
+<label id="formLabel">Search Match:  </label>
+<input id="formInput" type="date" value="2020-01-01">
+<button class="button" id="searchDate" (click)="searchDate()">search</button>
+<button class="button" id="backDate" (click)="backDate()">Restore</button><br><br>
+<div id="matchTable">
+  <table style="width:80%">
+    <tr>
+      <th class="th">Date</th>
+      <th class="th">Home Team</th>
+      <th class="th">Home Team Goals</th>
+      <th class="th">Away Team</th>
+      <th class="th">Away Team Goals</th>
+    </tr>
+    <tr *ngFor="let match of matchRegistry">
+      <td>{{match.dateTime.hour+":"+
+      match.dateTime.minutes+" "+
+      match.dateTime.day+"-"+
+      match.dateTime.month+"-"+
+      match.dateTime.year}}</td>
+      <td>{{match.homeTeam}}</td>
+      <td>{{match.homeTeamGoals}}</td>
+      <td>{{match.awayTeam}}</td>
+      <td>{{match.awayTeamGoals}}</td>
+    </tr>
+  </table>
+</div>
+</body>

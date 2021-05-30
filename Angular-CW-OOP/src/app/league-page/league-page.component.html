@@ -1,0 +1,48 @@
+<head>
+  <title>Premier League Table</title>
+</head>
+<body>
+<header>
+  <div id="upper-part">
+    <h2>Premier League Table</h2>
+  </div>
+</header>
+<div>
+  <button class="sortbutton" (click)="sortWins()">Won</button>
+  <button class="sortbutton" (click)="sortDraws()">Drawn</button>
+  <button class="sortbutton" (click)="sortDefeats()">Lost</button>
+  <button class="sortbutton" (click)="sortGS()">G/S</button>
+  <button class="sortbutton" (click)="sortGR()">G/R</button>
+  <button class="sortbutton" (click)="sortGD()">G/D</button>
+  <button class="sortbutton" (click)="sortPoints()">Points</button>
+</div>
+<div id="leagueTable">
+  <table style="width:80%">
+    <tr>
+      <th>Position</th>
+      <th>Club Name</th>
+      <th>Matches Played</th>
+      <th>Won</th>
+      <th>Drawn</th>
+      <th>Lost</th>
+      <th>G/S</th>
+      <th>G/R</th>
+      <th>G/D</th>
+      <th>Points</th>
+    </tr>
+
+    <tr *ngFor="let footballClub of premierLeague">
+      <td>{{footballClub.position}}</td>
+      <td>{{footballClub.clubName}}</td>
+      <td>{{footballClub.matchesPlayed}}</td>
+      <td>{{footballClub.wins}}</td>
+      <td>{{footballClub.draws}}</td>
+      <td>{{footballClub.defeats}}</td>
+      <td>{{footballClub.goalsScored}}</td>
+      <td>{{footballClub.goalsReceived}}</td>
+      <td>{{footballClub.goalsScored-footballClub.goalsReceived}}</td>
+      <td>{{footballClub.points}}</td>
+    </tr>
+  </table>
+</div>
+</body>

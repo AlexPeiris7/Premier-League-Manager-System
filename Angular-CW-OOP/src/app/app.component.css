@@ -1,0 +1,102 @@
+html {
+  background: gray;
+  background-image: url("logo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 99 !important;
+  scroll-behavior: smooth;
+}
+#leagueTableButton {
+  float: right;
+  border: 3px solid black;
+  padding: 10px;
+  background: #f3f0f1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 32px;
+  font-family: 'Tahoma', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  left: 85%;
+  top: 3%;
+  width: 14.5%;
+  z-index: 99 !important;
+}
+#backToTop {
+  float: right;
+  border: 3px solid black;
+  padding: 10px;
+  background: #f3f0f1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 32px;
+  font-family: 'Tahoma', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  left: 85%;
+  top: 33%;
+  width: 14.5%;
+  z-index: 99 !important;
+}
+#simulateMatchButton {
+  float: right;
+  border: 3px solid black;
+  padding: 10px;
+  background: #f3f0f1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 32px;
+  font-family: 'Tahoma', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  left: 85%;
+  top: 23%;
+  width: 14.5%;
+  z-index: 99 !important;
+}
+#matchRegistryButton {
+  float: right;
+  border: 3px solid black;
+  padding: 10px;
+  background: #f3f0f1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 32px;
+  font-family: 'Tahoma', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  left: 85%;
+  top: 13%;
+  width: 14.5%;
+  z-index: 99 !important;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+  color: purple;
+}
+
